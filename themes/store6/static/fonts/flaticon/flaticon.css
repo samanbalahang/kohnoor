@@ -1,0 +1,57 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 04/10/2016 13:48
+  	*/
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("/Themes/store6/static/fonts/flaticon/Flaticon.eot");
+    src: url("/Themes/store6/static/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("/Themes/store6/static/fonts/flaticon/Flaticon.woff") format("woff"), url("/Themes/store6/static/fonts/flaticon/Flaticon.ttf") format("truetype"), url("/Themes/store6/static/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("/Themes/store6/static/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+    }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-style: normal;
+}
+
+.flaticon-black:before {
+    content: "\f100";
+}
+
+.flaticon-business:before {
+    content: "\f101";
+}
+
+.flaticon-logo:before {
+    content: "\f102";
+}
+
+.flaticon-refresh:before {
+    content: "\f103";
+}
+
+.flaticon-search:before {
+    content: "\f104";
+}
+
+.flaticon-search-1:before {
+    content: "\f105";
+}
+
+.flaticon-social:before {
+    content: "\f106";
+}
+
+.flaticon-tool:before {
+    content: "\f107";
+}

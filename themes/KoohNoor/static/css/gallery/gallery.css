@@ -1,0 +1,196 @@
+
+.Photogallery {
+    position: relative;
+}
+
+.portfolio {
+    margin-bottom: 50px;
+    direction: ltr;
+}
+
+.portfolio-alt {
+    padding: 100px 0;
+}
+
+ul#portfolio-filter {
+    list-style: none;
+    position: relative;
+}
+
+    ul#portfolio-filter:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        bottom: 0;
+        border: 1px solid #000;
+        left: 0;
+    }
+
+section.portfolio ul#portfolio-filter {
+    margin-top: 100px;
+}
+
+ul#portfolio-filter li {
+    float:left;
+    padding: 0 15px;
+}
+ul#portfolio-filter:after {
+    content:'';
+    clear:both;
+    display:block;
+}
+    ul#portfolio-filter li.activeFilter {
+        position: relative;
+    }
+
+        ul#portfolio-filter li.activeFilter a {
+            color: #4c4c4c;
+        }
+
+            ul#portfolio-filter li.activeFilter a:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: #d2ab67;
+            }
+
+    ul#portfolio-filter li a {
+        color: #999999;
+        font-size: 11pt;
+        font-family: IRANYekan,tahoma,'Cabin', sans-serif;
+        position: relative;
+        padding: 10px 0;
+        display: block;
+    }
+
+.portfolio-item {
+    padding: 15px;
+    width: 25%;
+}
+
+    .portfolio-item.wide-portfolio {
+        width: 50%;
+    }
+
+    .portfolio-item .portfolio-image {
+        position: relative;
+        overflow: hidden;
+        border-radius:20px;
+    }
+
+        .portfolio-item .portfolio-image img {
+            width: 100%;
+            height: auto;
+            -webkit-transition: -webkit-transform 0.35s;
+            -o-transition: -o-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: scale(1.01);
+            -ms-transform: scale(1.01);
+            -o-transform: scale(1.01);
+            transform: scale(1.01);
+        }
+
+        .portfolio-item .portfolio-image:hover img {
+            -webkit-transform: scale(1.12);
+            -ms-transform: scale(1.12);
+            -o-transform: scale(1.12);
+            transform: scale(1.12);
+        }
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+    .portfolio-overlay:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+        background-color: rgba(210,171,103,0.8);
+    }
+
+    .portfolio-overlay i.mdi.mdi-magnify {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        font-size: 28pt;
+        color: #000;
+        z-index: 2;
+        line-height: 1;
+        background: #d2ab67;
+        border-radius:15px;
+        text-align:center;
+        line-height:50px;
+    }
+
+body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-overlay {
+    -webkit-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+}
+
+.portfolio-item:hover .portfolio-overlay:before, .iportfolio:hover .portfolio-overlay:before {
+    opacity: 0.7;
+}
+
+.portfolio-item:hover .portfolio-overlay, .iportfolio:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+#load-infinite {
+    padding: 60px 0;
+    text-align: center;
+    background: #fc4349;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-size: 2.0rem;
+    font-family: IRANSans,tahoma,'Cabin', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    border: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .rowtop>*{
+        float:none!important;
+    }
+    .portfolio-item {
+        width: 33.333333%;
+    }
+
+    ul#portfolio-filter li {
+        padding: 0 5px;
+        
+
+}
+        ul#portfolio-filter li a {
+            font-size: 9pt;
+        }
+}
+
+
+@media only screen and (max-width: 520px) {
+    .portfolio-item {
+        width: 50%;
+    }
+}
